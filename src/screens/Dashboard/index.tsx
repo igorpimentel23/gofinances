@@ -16,6 +16,7 @@ import {
   User,
   UserGreeting,
   UserName,
+  LogoutButton,
   Icon,
   Transactions,
   Title,
@@ -77,8 +78,9 @@ export function Dashboard(): JSX.Element {
               <UserName>Igor</UserName>
             </User>
           </UserInfo>
-
-          <Icon name="power" />
+          <LogoutButton onPress={() => true}>
+            <Icon name="power" />
+          </LogoutButton>
         </UserWrapper>
       </Header>
       <HighlightCards>
