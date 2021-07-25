@@ -2,8 +2,10 @@ import 'react-native-gesture-handler';
 import 'intl';
 import 'intl/locale-data/jsonp/pt-BR';
 
-import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
+
+import { NavigationContainer } from '@react-navigation/native';
+import { StatusBar } from 'react-native';
 import { ThemeProvider } from 'styled-components';
 
 import {
@@ -32,6 +34,7 @@ export default function App(): JSX.Element {
   return (
     <ThemeProvider theme={theme}>
       <NavigationContainer>
+        <StatusBar barStyle="light-content" />
         <AppRoutes />
       </NavigationContainer>
     </ThemeProvider>
